@@ -276,7 +276,7 @@ header.sticky {
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
-.row img {
+.row img,.box img {
     height: auto;
     width: 100%;
     border-radius: 28px;
