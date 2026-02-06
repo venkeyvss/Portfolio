@@ -1,286 +1,1168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfilo Website</title>
-    <!-- #CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- #box icon -->
-    
-  <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <!--remox icon-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkatesh Raja | Full Stack Developer</title>
+  <meta name="description"
+    content="Venkatesh Raja - Full Stack Developer with 2.2+ years experience in React.js, Spring Boot, Python & Machine Learning. Building AI-powered trading platforms.">
+  <meta name="keywords"
+    content="Venkatesh Raja, Full Stack Developer, React.js, Spring Boot, Python, Machine Learning, XGBoost, Algorithmic Trading">
+  <meta name="author" content="Venkatesh Raja">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Venkatesh Raja | Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer specializing in React.js, Spring Boot, Python & ML">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./img/og-image.jpg">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://prod.spline.design">
+  <link rel="dns-prefetch" href="https://prod.spline.design">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
 
-<header>
-  <a href="#" class="logo">Developer <span>Venkatesh.</span></a>
-  <div class="bx bx-menu" id="menu-icon"></div>
-  <ul class="navlist">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Projects</a></li>
-    <li><a href="#portfolio">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-
-  </ul>
-<div class="top-btnn">
-  <a href="#contact" class="h-btn" style="text-align: center;" >Contact me</a>
-</div>
-
-</header>
-
-
-<section class="hero" id="home">
-<div class="main-content" data-aos="fade-in">
-  <h4>Hi, There</h4>
-  <h1>I'm <span>Venkatesh Raja</span></h1>
-  <p>I am a motivated and detail-oriented Computer Science graduate with a
-    solid foundation in software development and web technologies. Proficient
-    in Python and Java for backend development, I have hands-on experience in
-    building interactive web applications using HTML, CSS, and JavaScript. I am
-    skilled in database management with SQL and eager to contribute to
-    innovative projects.
-    </p>
-<div class="social">
-  <a href="https://github.com/venkeyvss" target="_blank"><i class="ri-github-fill"></i></a>
-  <a href="https://www.linkedin.com/in/venkeyid" target="_blank"><i class="ri-linkedin-fill"></i></a>
-  <a href="mailto:venkateshofficemail@gmail.com"><i class="ri-mail-fill"></i></a>
-  <a href="https://youtube.com/@vss_edits" target="_blank"><i class="ri-youtube-fill"></i></a>
-</div>
-<div class="main-btn">
-  <a href="https://www.linkedin.com/in/venkeyid" class="btn" target="_blank">Hire me</a>
-  <a class="btn btn2" onclick="Download()">Download CV</a>
-
-  <script>
-    function Download() {
-     
-            window.location.href = "Venkatesh_Resume.pdf";   
-         
-    }
-</script>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about" id="about">
-  <div class="about-img" data-aos="zoom-in-down">
-    <img src="./img/about.jpg" >
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="preloader-bracket">{</span>
+        <span class="preloader-name">VR</span>
+        <span class="preloader-bracket">}</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress" id="preloaderProgress"></div>
+      </div>
+      <p class="preloader-text">Initializing Portfolio<span class="loading-dots"></span></p>
+    </div>
   </div>
-<div class="about-text" data-aos="zoom-in-up">
-  <h2>I am  <span>Software Developer</span><br>
-  &  <span>Web Designer</span> </h2>
-  <div class="exp-area">
-    <p class="exp">
-      Experience:
-      <span><b>Fresher</b></span>
-    </p>
-    <p class="exp">
-      Qualification:
-      <span><b>Msc - Computer Science</b></span>
-    </p>
-    
-    <p class="exp">
-      Speciality:
-      <span> <b> Python and SQL</b></span>
-    </p>
-    <p class="exp">
-      Address: 
-      <span><b>Dharmapuri, Tamilnadu, India. 636808</b></span>
-    </p>
-    
-    <p class="exp">
-      Email: 
-      <span><a><b>venkateshofficemail@gmail.com</b></a></span>
-    </p>
-    
-    <p class="exp">
-      Phone: 
-      <span><b>+91 9659568898</b></span>
-    </p>
-    
-    <p class="exp">
-      Freelance: 
-      <span><b>Availble</b></span>
-    </p>
-  </div>
-  <a href="#services" class="btn">View All Projects</a>
-</div>
 
-</section>
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-outer" id="cursorOuter"></div>
+  <div class="cursor-inner" id="cursorInner"></div>
 
-<section class="services" id="services">
-  <div class="center-text" data-aos="fade-down">
-    <h2>My <span>Projects</span> </h2>
-  </div>
-  <div class="services-content" data-aos="zoom-in-up">
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="box">
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">{</span>
+        <span class="logo-text">Venkatesh</span>
+        <span class="logo-bracket">}</span>
+      </a>
 
-      <img src="./img/music.webp" alt="">
-      <h3>Face Emotion Based Music Player</h3>
-      <p>An AI-driven music player utilizing facial recognition technology to detect
-        user emotions and suggest appropriate songs.
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-section="home">
+              <span class="nav-number">01.</span> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <span class="nav-number">02.</span> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-section="experience">
+              <span class="nav-number">03.</span> Experience
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <span class="nav-number">04.</span> Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <span class="nav-number">05.</span> Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <span class="nav-number">06.</span> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <i class="ri-moon-fill" id="themeIcon"></i>
+        </button>
+        <a href="Venkatesh_Resume.pdf" class="nav-resume-btn" download>
+          <i class="ri-download-line"></i> Resume
+        </a>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero section" id="home">
+    <!-- Animated Background -->
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+    </div>
+
+    <div class="hero-container container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+        <!-- Greeting -->
+        <div class="hero-greeting">
+          <span class="greeting-line"></span>
+          <span class="greeting-text">Hello, I'm</span>
+        </div>
+
+        <!-- Name -->
+        <h1 class="hero-name">
+          Venkatesh <span class="hero-name-accent">Raja</span>
+        </h1>
+
+        <!-- Role Typewriter -->
+        <div class="hero-role">
+          <span class="role-static">I build </span>
+          <span class="role-dynamic" id="roleTyped"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+
+        <!-- Description -->
+        <p class="hero-description">
+          Full Stack Developer with <strong>2.2+ years</strong> of experience building
+          <strong>scalable, AI-powered web applications</strong> using React.js, Spring Boot &amp; Python.
+          Specialized in <strong>algorithmic trading systems</strong> powered by XGBoost ML models.
         </p>
-      <a href="https://github.com/venkeyvss/My_FinalYear_Project" target="_blank">Download Now
- <i class="ri-arrow-right-line"></i>
 
-      </a>
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value" data-target="2.2">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Years Exp</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-value" data-target="5">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-value" data-target="500">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Commits</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-value" data-target="99.9">0</span>
+            <span class="stat-suffix">%</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-social">
+          <a href="https://github.com/venkeyvss" target="_blank" class="social-link" aria-label="GitHub"
+            data-tooltip="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/venkeyid" target="_blank" class="social-link" aria-label="LinkedIn"
+            data-tooltip="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="mailto:venkey2kkid@gmail.com" class="social-link" aria-label="Email" data-tooltip="Email">
+            <i class="ri-mail-fill"></i>
+          </a>
+          <a href="https://youtube.com/@vss_edits" target="_blank" class="social-link" aria-label="YouTube"
+            data-tooltip="YouTube">
+            <i class="ri-youtube-fill"></i>
+          </a>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Let's Talk</span>
+            <i class="ri-chat-3-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+        <!-- Premium Code Visual -->
+        <div class="hero-center-wrapper">
+          <!-- Mobile Visual (Visible only on mobile) -->
+          <div class="hero-mobile-visual">
+            <div class="tech-sphere-container">
+              <div class="tech-sphere-glow"></div>
+              <div class="tech-sphere-core">
+                <i class="ri-code-box-line"></i>
+              </div>
+              <div class="tech-ring ring-1"></div>
+              <div class="tech-ring ring-2"></div>
+              <div class="tech-floating-icon icon-1"><i class="ri-reactjs-line"></i></div>
+              <div class="tech-floating-icon icon-2"><i class="ri-database-2-line"></i></div>
+              <div class="tech-floating-icon icon-3"><i class="ri-terminal-box-line"></i></div>
+            </div>
+          </div>
+
+          <!-- Desktop Code Snippet -->
+          <div class="hero-code-snippet">
+            <div class="code-header">
+              <div class="window-controls">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+
+              <!-- Language Tabs -->
+              <div class="code-tabs">
+                <button class="code-tab active" data-lang="python">Python</button>
+                <button class="code-tab" data-lang="java">Java</button>
+              </div>
+
+              <div class="code-actions">
+                <span class="code-title">developer.py</span>
+                <button class="code-run-btn" id="runCodeBtn" aria-label="Run Code">
+                  <i class="ri-play-fill"></i> Run
+                </button>
+              </div>
+            </div>
+            <pre
+              class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Venkatesh Raja"</span>
+        self.role = <span class="code-string">"Full Stack Dev"</span>
+        self.stack = [<span class="code-string">"React"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Spring"</span>]
+    
+    <span class="code-keyword">def</span> <span class="code-func">build</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"AI-Solutions"</span> <span class="code-cursor-blink">|</span></code></pre>
+            <div class="code-output" id="codeOutput">
+              <div class="output-line"><span class="output-prompt">></span> <span class="output-text"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="ri-user-3-fill"></i> About Me</span>
+        <h2 class="section-title">Passionate about building <span class="gradient-text">digital experiences</span>
+        </h2>
+        <p class="section-subtitle">Get to know me and what drives my work</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- About Image -->
+        <div class="about-image-wrapper" data-aos="fade-right" data-aos-duration="1000">
+          <div class="about-image">
+            <img src="./img/about.png" alt="Venkatesh Raja" loading="lazy">
+            <div class="about-image-border"></div>
+          </div>
+          <!-- Floating badges -->
+          <div class="about-badge badge-1">
+            <i class="ri-code-s-slash-fill"></i>
+            <span>2.2+ Years</span>
+          </div>
+          <div class="about-badge badge-2">
+            <i class="ri-brain-fill"></i>
+            <span>ML Expert</span>
+          </div>
+          <div class="about-badge badge-3">
+            <i class="ri-rocket-fill"></i>
+            <span>Fast Learner</span>
+          </div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+          <p class="about-text">
+            I'm a <strong>results-driven Full Stack Developer</strong> with 2.2+ years of professional experience at
+            <strong>MAK Infotech Pvt. Ltd.</strong>, building scalable, AI-powered web applications.
+          </p>
+          <p class="about-text">
+            I specialize in developing <strong>algorithmic trading systems</strong> powered by XGBoost ML models,
+            real-time data processing, and automated trade execution. My work spans the full spectrum from
+            <strong>React.js frontends</strong> to <strong>Spring Boot microservices</strong> and
+            <strong>Python ML pipelines</strong>.
+          </p>
+          <p class="about-text">
+            I'm passionate about combining <strong>software engineering</strong> with <strong>machine learning</strong>
+            to build intelligent, production-grade applications that make a real impact.
+          </p>
+
+          <!-- Info Grid -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-user-fill"></i></span>
+              <div>
+                <span class="info-label">Name</span>
+                <span class="info-value">Venkatesh Raja</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-briefcase-fill"></i></span>
+              <div>
+                <span class="info-label">Experience</span>
+                <span class="info-value">2.2+ Years</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-building-fill"></i></span>
+              <div>
+                <span class="info-label">Company</span>
+                <span class="info-value">MAK Infotech Pvt. Ltd.</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-graduation-cap-fill"></i></span>
+              <div>
+                <span class="info-label">Education</span>
+                <span class="info-value">M.Sc Computer Science</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-map-pin-fill"></i></span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Dharmapuri, Tamil Nadu</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon"><i class="ri-checkbox-circle-fill"></i></span>
+              <div>
+                <span class="info-label">Availability</span>
+                <span class="info-value available">Open for Opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Hire Me</span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="Venkatesh_Resume.pdf" class="btn btn-outline" download>
+              <span>Download CV</span>
+              <i class="ri-download-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="box">
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="ri-briefcase-fill"></i> Career Journey</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">My work experience and educational background</p>
+      </div>
 
-      <img src="./img/next.png" alt="">
-      <h3>Voice authentication</h3>
-      <p>Voice authentication is a biometric technology that uses a person's voice to verify their identity. It's also known as voice recognition, speaker recognition, or voice biometrics.</p>
-      <a href="https://github.com/venkeyvss" target="_blank">Download Now
- <i class="ri-arrow-right-line"></i>
+      <!-- Experience Tabs -->
+      <div class="exp-tabs" data-aos="fade-up">
+        <button class="exp-tab active" data-tab="work">
+          <i class="ri-briefcase-fill"></i> Work
+        </button>
+        <button class="exp-tab" data-tab="education">
+          <i class="ri-graduation-cap-fill"></i> Education
+        </button>
+        <button class="exp-tab" data-tab="certifications">
+          <i class="ri-award-fill"></i> Certifications
+        </button>
+      </div>
 
-      </a>
+      <!-- Work Experience -->
+      <div class="exp-content active" id="work" data-aos="fade-up">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot active-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Full Stack Developer</h3>
+                  <p class="timeline-company">
+                    <i class="ri-building-fill"></i> MAK Infotech Pvt. Ltd.
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="ri-calendar-fill"></i> Dec 2023 – Present</span>
+                  <span class="timeline-location"><i class="ri-map-pin-fill"></i> Dharmapuri, TN</span>
+                </div>
+              </div>
+              <ul class="timeline-points">
+                <li>Spearheading an <strong>XGBoost-based trading engine</strong> integrated with Spring Boot
+                  microservices and Python ML pipelines</li>
+                <li>Built and deployed ML models for stock prediction achieving <strong>78% accuracy</strong> on
+                  intraday price movement</li>
+                <li>Developed real-time trading dashboards in <strong>React.js with WebSocket</strong> integration for
+                  live market data</li>
+                <li>Engineered secure Spring Boot REST APIs with FastAPI microservices for <strong>sub-50ms ML
+                    inference</strong></li>
+                <li>Improved system throughput by <strong>50%</strong> through Redis caching and optimized pipelines
+                </li>
+                <li>Designed automated backtesting frameworks processing <strong>5+ years</strong> of historical data
+                  (Sharpe ratio ≥ 1.8)</li>
+                <li>Managed CI/CD pipelines maintaining <strong>99.9% uptime</strong> on AWS EC2</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>React.js</span>
+                <span>Spring Boot</span>
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>FastAPI</span>
+                <span>Redis</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Software Developer Intern</h3>
+                  <p class="timeline-company">
+                    <i class="ri-building-fill"></i> MAK Infotech Pvt. Ltd.
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="ri-calendar-fill"></i> Jun 2022 – May 2023</span>
+                  <span class="timeline-location"><i class="ri-map-pin-fill"></i> Dharmapuri, TN</span>
+                </div>
+              </div>
+              <ul class="timeline-points">
+                <li>Contributed to a <strong>Mobile E-Commerce Platform</strong> serving 10,000+ SKUs</li>
+                <li>Developed responsive UI components using <strong>React.js and Tailwind CSS</strong></li>
+                <li>Built Spring Boot REST APIs for product catalog, authentication, and order management</li>
+                <li>Integrated Redis caching reducing <strong>API latency by 45%</strong></li>
+                <li>Gained expertise in <strong>Agile/Scrum</strong>, code reviews, and clean code architecture</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+                <span>Spring Boot</span>
+                <span>Redis</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="exp-content" id="education">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">M.Sc. in Computer Science</h3>
+                  <p class="timeline-company">
+                    <i class="ri-school-fill"></i> Govt. Arts & Science College, Pennagaram
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="ri-calendar-fill"></i> Aug 2021 – May 2023</span>
+                  <span class="timeline-badge">CGPA: 7.43/10</span>
+                </div>
+              </div>
+              <ul class="timeline-points">
+                <li>Advanced Algorithms, Cloud Computing, Machine Learning, Distributed Systems</li>
+                <li>Final Year Project: <strong>Human Face Emotion-Based Music Player</strong> using TensorFlow &
+                  CNN</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Cloud Computing</span>
+                <span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                  <p class="timeline-company">
+                    <i class="ri-school-fill"></i> B.R.P.T. Dr. M.G.R. Govt. Arts & Science College, Palacode
+                  </p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="ri-calendar-fill"></i> Jul 2018 – Jun 2021</span>
+                  <span class="timeline-badge">CGPA: 7.34/10</span>
+                </div>
+              </div>
+              <ul class="timeline-points">
+                <li>Data Structures, DBMS, Web Technologies, Operating Systems, OOP</li>
+                <li>Strong foundation in programming fundamentals and algorithms</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>Java</span>
+                <span>Data Structures</span>
+                <span>DBMS</span>
+                <span>Web Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="exp-content" id="certifications">
+        <div class="cert-grid">
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="cert-icon"><i class="ri-java-fill"></i></div>
+            <h4>Java Full Stack Development</h4>
+            <p>Spring Boot, React.js, REST APIs, SQL & AWS Deployment</p>
+            <span class="cert-date">Jun – Jul 2023</span>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-icon"><i class="ri-code-s-slash-fill"></i></div>
+            <h4>Python Advanced Programming</h4>
+            <p>Data Handling, Automation & Backend Scripting with Flask/FastAPI</p>
+            <span class="cert-date">Jul – Aug 2023</span>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-icon"><i class="ri-brain-fill"></i></div>
+            <h4>Machine Learning with Python</h4>
+            <p>XGBoost, Scikit-learn, Feature Engineering & Model Deployment</p>
+            <span class="cert-date">Sep – Oct 2023</span>
+          </div>
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-icon"><i class="ri-cloud-fill"></i></div>
+            <h4>AWS Cloud Practitioner</h4>
+            <p>Cloud Architecture, EC2, S3, RDS, Lambda & Security</p>
+            <span class="cert-date">Nov 2023</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="box">
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="ri-folder-fill"></i> Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Some of the projects I've built and contributed to</p>
+      </div>
 
-      <img src="./img/website.png" alt="">
-      <h3>Portfolio</h3>
-      <p>A portfolio website is a curated online space that showcases your work, skills, and experiences. It's a practical way to share your work with potential collaborators, employers, or the press.</p>
-      <a href="https://github.com/venkeyvss/Portfolio" target="_blank">Download Now
- <i class="ri-arrow-right-line"></i>
+      <!-- Featured Project 1 -->
+      <div class="project-featured" data-aos="fade-up">
+        <div class="project-featured-image">
+          <div class="project-image-overlay"></div>
+          <img src="./img/Algo_Trading_Img.png" alt="AI Trading Platform" loading="lazy">
+        </div>
+        <div class="project-featured-content">
+          <span class="project-label">Featured Project</span>
+          <h3 class="project-title">AI-Powered Algorithmic Trading Platform</h3>
+          <div class="project-description-card">
+            <p>Comprehensive algorithmic trading system with an XGBoost prediction engine for automated trade execution
+              across top 500 NSE stocks. Features real-time ML inference with sub-50ms latency, intelligent signal
+              detection (QML, BOS, CHOCH), and dynamic capital allocation with risk management.</p>
+          </div>
+          <div class="project-tech-list">
+            <span>Python</span>
+            <span>XGBoost</span>
+            <span>Spring Boot</span>
+            <span>React.js</span>
+            <span>FastAPI</span>
+            <span>WebSocket</span>
+            <span>Redis</span>
+            <span>MongoDB</span>
+            <span>Angel One SmartAPI</span>
+            <span>Docker</span>
+            <span>AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/venkeyvss" target="_blank" class="project-link-icon" aria-label="GitHub">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="#" class="project-link-icon" aria-label="Live Demo">
+              <i class="ri-external-link-fill"></i>
+            </a>
+          </div>
+          <!-- Highlights -->
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-value">78%</span>
+              <span class="highlight-label">ML Accuracy</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value">&lt;50ms</span>
+              <span class="highlight-label">Inference</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value">500+</span>
+              <span class="highlight-label">NSE Stocks</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value">≥1.8</span>
+              <span class="highlight-label">Sharpe Ratio</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      </a>
+      <!-- Featured Project 2 -->
+      <div class="project-featured reverse" data-aos="fade-up">
+        <div class="project-featured-image">
+          <div class="project-image-overlay"></div>
+          <img src="./img/ecommerce.png" alt="E-Commerce Platform" loading="lazy">
+        </div>
+        <div class="project-featured-content">
+          <span class="project-label">Featured Project</span>
+          <h3 class="project-title">Mobile E-Commerce Platform</h3>
+          <div class="project-description-card">
+            <p>Full-featured mobile-first e-commerce platform for smartphones and electronics with complete order
+              lifecycle management, serving 10,000+ SKUs. Features advanced search, Razorpay integration, admin
+              dashboard with Chart.js analytics, and real-time inventory management.</p>
+          </div>
+          <div class="project-tech-list">
+            <span>React.js</span>
+            <span>Tailwind CSS</span>
+            <span>Spring Boot</span>
+            <span>Redis</span>
+            <span>MySQL</span>
+            <span>JWT</span>
+            <span>Razorpay</span>
+            <span>Chart.js</span>
+            <span>AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/venkeyvss" target="_blank" class="project-link-icon" aria-label="GitHub">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="#" class="project-link-icon" aria-label="Live Demo">
+              <i class="ri-external-link-fill"></i>
+            </a>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-value">10K+</span>
+              <span class="highlight-label">SKUs</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value">45%</span>
+              <span class="highlight-label">Faster API</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-value">40%</span>
+              <span class="highlight-label">Better Perf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid -->
+      <h3 class="other-projects-title" data-aos="fade-up">Other Noteworthy Projects</h3>
+      <div class="projects-grid" data-aos="fade-up">
+        <div class="project-card">
+          <div class="project-card-header">
+            <i class="ri-folder-open-fill project-folder"></i>
+            <div class="project-card-links">
+              <a href="https://github.com/venkeyvss/My_FinalYear_Project" target="_blank"><i
+                  class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h4 class="project-card-title">Face Emotion Based Music Player</h4>
+          <p class="project-card-desc">AI-powered music player using TensorFlow CNN for real-time facial emotion
+            detection. Automatically suggests songs based on detected mood.</p>
+          <div class="project-card-tech">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>CNN</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <i class="ri-folder-open-fill project-folder"></i>
+            <div class="project-card-links">
+              <a href="https://github.com/venkeyvss" target="_blank"><i class="ri-github-fill"></i></a>
+            </div>
+          </div>
+          <h4 class="project-card-title">Voice Authentication System</h4>
+          <p class="project-card-desc">Biometric voice recognition system for secure identity verification using speaker
+            recognition and voice biometrics technology.</p>
+          <div class="project-card-tech">
+            <span>Python</span>
+            <span>ML</span>
+            <span>Audio Processing</span>
+            <span>Security</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <i class="ri-folder-open-fill project-folder"></i>
+            <div class="project-card-links">
+              <a href="https://github.com/venkeyvss/Portfolio" target="_blank"><i class="ri-github-fill"></i></a>
+              <a href="#" target="_blank"><i class="ri-external-link-fill"></i></a>
+            </div>
+          </div>
+          <h4 class="project-card-title">Developer Portfolio</h4>
+          <p class="project-card-desc">Modern, responsive portfolio website with 3D Spline animations, smooth
+            transitions, dark/light theme, and interactive UI elements.</p>
+          <div class="project-card-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Spline 3D</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<section class="portfolio" id="portfolio">
-<div class="center-text" data-aos="fade-down">
-  <h2>My <span> Technical Skills</span></h2>         
-</div>
-
-<div class="Portfolio-content" data-aos="zoom-in-up">
-  <div class="row">
-    <img src="./img/port-1.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5>Python <br> Java</h5><br/>
-         
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="ri-tools-fill"></i> Tech Stack</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">The tools and technologies I work with daily</p>
       </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
-      </div>                                  
-      
+
+      <!-- Skills Categories -->
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-layout-masonry-fill"></i>
+            </div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="92">
+              <div class="skill-item-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="88">
+              <div class="skill-item-info">
+                <span class="skill-name">JavaScript / TypeScript</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="95">
+              <div class="skill-item-info">
+                <span class="skill-name">HTML5 / CSS3 / Tailwind</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">Redux / Material-UI</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-server-fill"></i>
+            </div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90">
+              <div class="skill-item-info">
+                <span class="skill-name">Spring Boot / Java</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="90">
+              <div class="skill-item-info">
+                <span class="skill-name">Python / FastAPI / Flask</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="88">
+              <div class="skill-item-info">
+                <span class="skill-name">RESTful APIs / Microservices</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">Spring Security / JWT</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-brain-fill"></i>
+            </div>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="88">
+              <div class="skill-item-info">
+                <span class="skill-name">XGBoost / Scikit-learn</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">Pandas / NumPy</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="82">
+              <div class="skill-item-info">
+                <span class="skill-name">TensorFlow / CNN</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="80">
+              <div class="skill-item-info">
+                <span class="skill-name">Feature Engineering</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-database-2-fill"></i>
+            </div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90">
+              <div class="skill-item-info">
+                <span class="skill-name">MySQL / PostgreSQL</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">MongoDB / Redis</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-cloud-fill"></i>
+            </div>
+            <h3>DevOps & Cloud</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">AWS (EC2, S3, RDS)</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-item-info">
+                <span class="skill-name">Docker / CI/CD</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">
+              <i class="ri-settings-3-fill"></i>
+            </div>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item" data-level="92">
+              <div class="skill-item-info">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-item" data-level="88">
+              <div class="skill-item-info">
+                <span class="skill-name">Postman / IntelliJ / VS Code</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h4>Programming Languages</h4>
-  </div>
-  <div class="row">
-    <img src="./img/port-2.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5>HTML <br> CSS <br> JavaScript</h5>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"><i class="ri-mail-fill"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's discuss how I can help</p>
       </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="ri-mail-fill"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:venkey2kkid@gmail.com">venkey2kkid@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="ri-phone-fill"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919659568898">+91 9659568898</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="ri-map-pin-fill"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Dharmapuri, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="ri-linkedin-fill"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/venkeyid" target="_blank">linkedin.com/in/venkeyid</a>
+            </div>
+          </div>
+
+          <!-- Social Strip -->
+          <div class="contact-social">
+            <a href="https://github.com/venkeyvss" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/venkeyid" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            <a href="mailto:venkey2kkid@gmail.com"><i class="ri-mail-fill"></i></a>
+            <a href="https://youtube.com/@vss_edits" target="_blank"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="name" required placeholder=" ">
+                <label for="name">Full Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">Email Address</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required placeholder=" ">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="6" required placeholder=" "></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+              <span class="btn-text"><span>Send Message</span><i class="ri-send-plane-fill"></i></span>
+              <span class="btn-loading"><i class="ri-loader-4-fill spinning"></i> Sending...</span>
+              <span class="btn-success"><i class="ri-check-double-fill"></i> Sent!</span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-    <h4>Front-End Development</h4>
-  </div>
-  <div class="row">
-    <img src="./img/port-3.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5> SQL <br> MongoDB</h5>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">{</span>
+            <span class="logo-text">Venkatesh</span>
+            <span class="logo-bracket">}</span>
+          </a>
+          <p>Building scalable, AI-powered applications with passion and precision.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <a href="https://github.com/venkeyvss" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/venkeyid" target="_blank">LinkedIn</a>
+          <a href="mailto:venkey2kkid@gmail.com">Email</a>
+          <a href="https://youtube.com/@vss_edits" target="_blank">YouTube</a>
+        </div>
       </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Venkatesh Raja. Crafted with ❤️ and lots of ☕</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="ri-arrow-up-line"></i>
+        </a>
       </div>
     </div>
-    <h4>Back-End Development</h4>
-  </div>
-  <div class="row">
-    <img src="./img/port-4.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5>GitHub<br>
-          HackerRank <br>
-          VsCode Editor </h5>
-      </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
-      </div>
-    </div>
-    <h4>Tools & Platforms:
-      </h4>
-  </div>
-  <div class="row">
-    <img src="./img/port-5.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5>Django <br>TensorFlow <br> Numpy</h5>
-      </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
-      </div>
-    </div>
-    <h4>Frameworks & Libraries</h4>
-  </div>
-  <div class="row">
-    <img src="./img/port-6.jpg" alt="">
-    <div class="main-row">
-      <div class="row-text">
-        <h5>OOPS <br>
-          Stack Development  </h5>
-      </div>
-      <div class="row-icon">
-<i class="ri-github-fill"></i>
-      </div>
-    </div>
-    <h4>Software Development Concepts</h4>
-  </div>
-</div>
+  </footer>
 
-</section>
-
-<section class="contact" id="contact">
-  <div class="center-text" data-aos="fade-down">
-    <h2>Contact<span>me</span></h2>
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">
+    <i class="ri-check-double-fill toast-icon"></i>
+    <span id="toastMsg">Message sent successfully!</span>
   </div>
-  <div class="contact-form" data-aos="zoom-in">
-    <form action="">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Email Address..." required>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
-      <input type="submit" value="Send Message" class="send-btn" style="text-align: center;">
-    </form>
-  </div>
-</section>
 
-<div class="footer">
-  <div class="copyright">
-    <p>2024 Venkatesh Raja, All Right Reserved.</p>
-  </div>
-  <a href="#home" class="scroll-top">
-    <i class="ri-arrow-up-s-fill"></i>
-  </a>
-</div>
-
-
-<script src="./script.js"></script>
-  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-offset:300,
-duration:1400,
-  });
-</script>
-
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
